@@ -983,3 +983,99 @@ ul { list-style: none; }
 .back-to-top:hover {
     transform: translateY(-3px) scale(1.05);
 }
+
+/* ===== PRINCIPAL SECTION ===== */
+.principal-section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, rgba(26, 86, 219, 0.05), rgba(5, 150, 105, 0.05));
+}
+.principal-card {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 40px 36px;
+    box-shadow: var(--shadow-hover);
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    border-left: 5px solid var(--primary);
+    transition: all var(--transition);
+}
+.principal-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+.principal-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #fff;
+    flex-shrink: 0;
+}
+.principal-content {
+    flex: 1;
+}
+.principal-badge {
+    display: inline-block;
+    padding: 4px 16px;
+    border-radius: 50px;
+    background: rgba(26, 86, 219, 0.1);
+    color: var(--primary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.principal-content h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 2px;
+}
+.principal-content h3 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--text);
+}
+.principal-content > p {
+    color: var(--text-light);
+    font-weight: 500;
+    margin-top: 4px;
+}
+.principal-message {
+    margin-top: 16px;
+    padding: 16px 20px;
+    background: var(--bg);
+    border-radius: 12px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+.principal-message i {
+    color: var(--primary);
+    font-size: 1.2rem;
+    opacity: 0.6;
+    margin-top: 4px;
+}
+.principal-message p {
+    font-style: italic;
+    color: var(--text-light);
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .principal-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    .principal-content h3 {
+        font-size: 1.4rem;
+    }
+    .principal-message {
+        text-align: left;
+    }
+}

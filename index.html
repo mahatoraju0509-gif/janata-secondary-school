@@ -4,134 +4,222 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>श्री जनता माध्यमिक विद्यालय | रामपुरखाप-९, परोहा, रौतहट</title>
-    <meta name="description" content="श्री जनता माध्यमिक विद्यालय, रामपुरखाप-९, परोहा, रौतहट। बालविकास देखि कक्षा १० सम्म शिक्षा।" />
-    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="श्री जनता माध्यमिक विद्यालय, रामपुरखाप-९, परोहा, रौतहट। बालविकास देखि कक्षा १० सम्म शिक्षा। १२००+ विद्यार्थी, १७ शिक्षक।" />
+    <meta name="keywords" content="श्री जनता माध्यमिक विद्यालय, रामपुरखाप, परोहा, रौतहट, विद्यालय, शिक्षा" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<div class="container">
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-school"></i>
+                <span>श्री जनता मा.वि.</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">गृह</a></li>
+                <li><a href="#about">परिचय</a></li>
+                <li><a href="#infrastructure">भौतिक</a></li>
+                <li><a href="#teachers">शिक्षक</a></li>
+                <li><a href="#students">विद्यार्थी</a></li>
+                <li><a href="#community">समुदाय</a></li>
+                <li><a href="#contact">सम्पर्क</a></li>
+            </ul>
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
 
-    <!-- ===== HEADER ===== -->
-    <header>
-        <h1>🏫 श्री जनता माध्यमिक विद्यालय</h1>
-        <p class="subtitle">रामपुरखाप-९, परोहा, रौतहट</p>
-        <p class="estd">स्थापना: वि.स. २०२१</p>
-    </header>
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="hero-badge">🏆 उत्कृष्ट विद्यालय</span>
+                <h1>श्री जनता <span>माध्यमिक विद्यालय</span></h1>
+                <p class="hero-sub">रामपुरखाप-९, परोहा, रौतहट</p>
+                <div class="hero-stats">
+                    <div><span>१२००+</span><label>विद्यार्थी</label></div>
+                    <div><span>१७</span><label>शिक्षक</label></div>
+                    <div><span>२०२१</span><label>स्थापना</label></div>
+                </div>
+                <a href="#about" class="btn-primary">थप जान्नुहोस् <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-image">
+                <img src="school-photo.jpg" alt="श्री जनता माध्यमिक विद्यालय">
+            </div>
+        </div>
+    </section>
 
     <!-- ===== PRINCIPAL ===== -->
-    <section class="principal-box">
-        <h2>📚 विद्यालय प्रशासन</h2>
-        <p><strong>प्रधानध्यापक:</strong> श्री जयमंगल प्रसाद</p>
-        <p><strong>ठेगाना:</strong> रामपुरखाप-९, परोहा, रौतहट</p>
-        <p><strong>निर्देशांक:</strong> २६°५२'०५०" N, ८५°१४'३८.६२" E</p>
+    <section id="principal" class="principal-section">
+        <div class="container">
+            <div class="principal-card">
+                <div class="principal-icon"><i class="fas fa-user-tie"></i></div>
+                <div>
+                    <span class="tag">📚 विद्यालय प्रशासन</span>
+                    <h2>प्रधानध्यापक</h2>
+                    <h3>श्री जयमंगल प्रसाद</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> रामपुरखाप-९, परोहा, रौतहट</p>
+                    <div class="message">
+                        <i class="fas fa-quote-left"></i>
+                        <p>शिक्षा नै समाजको आधार हो। हामी विद्यार्थीहरूलाई गुणस्तरीय शिक्षा प्रदान गर्न प्रतिबद्ध छौं।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- ===== ABOUT ===== -->
-    <section class="about-box">
-        <h2>📜 ऐतिहासिक पृष्ठभूमि</h2>
-        <p>यो विद्यालय वि.स. २०२१ सालमा स्थापना भई शिक्षाको उज्यालो घामबाट कुनै पनि बालबालिका वन्चित हुन नपरोस् भन्ने महान लक्ष्य बोकेर अगाडि बढेको छ।</p>
-        <p>समाजसेवी स्व. शेख मजिद, स्व. श्री शेख चुल्हाई, स्व. श्री राम सरुक राउत, कुमी, शेख इनुस र जग्गा दाता स्व. श्री रामचन्द्र कलवार तथा स्थानीय शिक्षाप्रेमीहरूको सक्रियतामा विद्यालयको बीजारोपण भएको हो।</p>
-    </section>
-
-    <!-- ===== VISION ===== -->
-    <section class="vision-box">
-        <h2>🎯 दूरदृष्टि</h2>
-        <p>समाज र राष्ट्रको आवश्यकता पूरा गर्ने युगसापेक्ष, कर्तव्यनिष्ठ, दक्ष, इमान्दार, नैतिकवान् जनशक्ति तयार गर्नु हाम्रो लक्ष्य हो।</p>
-        <p>बालमैत्री एवं शिक्षकमैत्री विद्यालय निर्माण गरी राष्ट्रिय स्तरको नमुना विद्यालयका रूपमा स्थापित गर्ने दूरदृष्टि राखेको छ।</p>
-    </section>
-
-    <!-- ===== EDUCATION SYSTEM ===== -->
-    <section class="edu-box">
-        <h2>📖 शिक्षा प्रणाली</h2>
-        <ul>
-            <li>बालविकास (ECD)</li>
-            <li>आधारभूत तह (कक्षा १-८)</li>
-            <li>माध्यमिक तह (कक्षा ९-१०)</li>
-        </ul>
-        <p>त्रैमासिक, अर्धवार्षिक र वार्षिक परीक्षा प्रणाली अवलम्बन गरिएको छ।</p>
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="tag">📜 इतिहास</span>
+                <h2>हाम्रो बारेमा</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-history"></i>
+                    <h3>ऐतिहासिक पृष्ठभूमि</h3>
+                    <p>यो विद्यालय वि.स. २०२१ सालमा स्थापना भई शिक्षाको उज्यालो घामबाट कुनै पनि बालबालिका वन्चित हुन नपरोस् भन्ने महान लक्ष्य बोकेर अगाडि बढेको छ।</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>दूरदृष्टि</h3>
+                    <p>समाज र राष्ट्रको आवश्यकता पूरा गर्ने युगसापेक्ष, कर्तव्यनिष्ठ, दक्ष, इमान्दार, नैतिकवान् जनशक्ति तयार गर्नु हाम्रो लक्ष्य हो।</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>शिक्षा प्रणाली</h3>
+                    <ul>
+                        <li>बालविकास (ECD)</li>
+                        <li>आधारभूत तह (१-८)</li>
+                        <li>माध्यमिक तह (९-१०)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- ===== INFRASTRUCTURE ===== -->
-    <section class="infra-box">
-        <h2>🏗️ भौतिक संरचना</h2>
-        <div class="infra-grid">
-            <div><h3>भवन</h3><p>६ वटा भवन, २० ओटा कोठा</p><ul><li>११ कक्षा कोठा</li><li>१ ECD कोठा</li><li>१ कम्प्युटर E-लाइब्रेरी</li><li>१ प्र.अ./स्टाफ कोठा</li><li>१ विज्ञान प्रयोगशाला</li><li>१ प्रशासन</li><li>३ स्टोर</li></ul></div>
-            <div><h3>खानेपानी</h3><p>३ हाते पम्प</p><ul><li>१ पम्प शौचालयको लागि</li><li>१००० लिटर ट्याकी</li></ul></div>
-            <div><h3>शौचालय</h3><p>४ वटा छुट्टाछुट्टै</p><ul><li>छात्र र छात्राका लागि</li><li>शिक्षक-विद्यार्थी संयुक्त</li></ul></div>
+    <section id="infrastructure" class="infra-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="tag">🏗️ भौतिक संरचना</span>
+                <h2>हाम्रा सुविधाहरू</h2>
+            </div>
+            <div class="infra-grid">
+                <div class="infra-card"><i class="fas fa-building"></i><h3>भवन</h3><p>६ वटा भवन, २० कोठा</p><ul><li>११ कक्षा कोठा</li><li>१ ECD कोठा</li><li>१ कम्प्युटर लाइब्रेरी</li><li>१ विज्ञान प्रयोगशाला</li></ul></div>
+                <div class="infra-card"><i class="fas fa-water"></i><h3>खानेपानी</h3><p>३ हाते पम्प</p><ul><li>१००० लिटर ट्याकी</li></ul></div>
+                <div class="infra-card"><i class="fas fa-toilet"></i><h3>शौचालय</h3><p>४ वटा छुट्टाछुट्टै</p><ul><li>छात्र/छात्राका लागि</li></ul></div>
+            </div>
         </div>
     </section>
 
     <!-- ===== TEACHERS ===== -->
-    <section class="teachers-box">
-        <h2>👨‍🏫 शिक्षक विवरण</h2>
-        <table>
-            <tr><th>क्र.स.</th><th>नाम</th><th>पद</th><th>किसिम</th></tr>
-            <tr><td>१</td><td>अयमनगल प्रसाद</td><td>प्र.अ.</td><td>अस्थाई</td></tr>
-            <tr><td>२</td><td>नवलकिशोर राय यादव</td><td>शिक्षक</td><td>स्थाई</td></tr>
-            <tr><td>३</td><td>गजिन्द्र पटेल</td><td>शिक्षक</td><td>स्थाई</td></tr>
-            <tr><td>४</td><td>नवलकिशोर यादव</td><td>शिक्षक</td><td>स्थाई</td></tr>
-            <tr><td>५</td><td>उदय साह</td><td>शिक्षक</td><td>स्थाई</td></tr>
-            <tr><td>६</td><td>ब्रुजीकेश पटेल</td><td>शिक्षक</td><td>न. करार</td></tr>
-            <tr><td>७</td><td>सुनील कुमार यादव</td><td>शिक्षक</td><td>न. करार</td></tr>
-            <tr><td>८</td><td>कबराजन पटेल</td><td>शिक्षक</td><td>न. करार</td></tr>
-            <tr><td>९</td><td>कामेश्वर सहनी</td><td>शिक्षक</td><td>न. करार</td></tr>
-            <tr><td>१०</td><td>जय प्रकाश द्विवेदी</td><td>शिक्षक</td><td>न. करार</td></tr>
-            <tr><td>११</td><td>मो. खुसीद रहमी</td><td>शिक्षक</td><td>न. करार</td></tr>
-            <tr><td>१२</td><td>अनुपमा कुमारी मिश्रा</td><td>बा.दि.</td><td>करार</td></tr>
-            <tr><td>१३</td><td>रामजी लाल दास</td><td>शिक्षक</td><td>अ. करार</td></tr>
-            <tr><td>१४</td><td>राजन कुमार साह सोनार</td><td>शिक्षक</td><td>अ. करार</td></tr>
-            <tr><td>१५</td><td>सुन्दी कुमारी साह</td><td>का.स.</td><td>न. करार</td></tr>
-            <tr><td>१६</td><td>राजन कुमार गुप्ता</td><td>शिक्षक</td><td>करार</td></tr>
-            <tr><td>१७</td><td>अर्जुन कुमार जयस्वाल</td><td>लेखापाल</td><td>करार</td></tr>
-        </table>
+    <section id="teachers" class="teachers-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="tag">👨‍🏫 हाम्रा शिक्षक</span>
+                <h2>शिक्षक विवरण</h2>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <tr><th>क्र.स.</th><th>नाम</th><th>पद</th><th>किसिम</th></tr>
+                    <tr><td>१</td><td>अयमनगल प्रसाद</td><td>प्र.अ.</td><td>अस्थाई</td></tr>
+                    <tr><td>२</td><td>नवलकिशोर राय यादव</td><td>शिक्षक</td><td>स्थाई</td></tr>
+                    <tr><td>३</td><td>गजिन्द्र पटेल</td><td>शिक्षक</td><td>स्थाई</td></tr>
+                    <tr><td>४</td><td>नवलकिशोर यादव</td><td>शिक्षक</td><td>स्थाई</td></tr>
+                    <tr><td>५</td><td>उदय साह</td><td>शिक्षक</td><td>स्थाई</td></tr>
+                    <tr><td>६</td><td>ब्रुजीकेश पटेल</td><td>शिक्षक</td><td>न. करार</td></tr>
+                    <tr><td>७</td><td>सुनील कुमार यादव</td><td>शिक्षक</td><td>न. करार</td></tr>
+                    <tr><td>८</td><td>कबराजन पटेल</td><td>शिक्षक</td><td>न. करार</td></tr>
+                    <tr><td>९</td><td>कामेश्वर सहनी</td><td>शिक्षक</td><td>न. करार</td></tr>
+                    <tr><td>१०</td><td>जय प्रकाश द्विवेदी</td><td>शिक्षक</td><td>न. करार</td></tr>
+                    <tr><td>११</td><td>मो. खुसीद रहमी</td><td>शिक्षक</td><td>न. करार</td></tr>
+                    <tr><td>१२</td><td>अनुपमा कुमारी मिश्रा</td><td>बा.दि.</td><td>करार</td></tr>
+                    <tr><td>१३</td><td>रामजी लाल दास</td><td>शिक्षक</td><td>अ. करार</td></tr>
+                    <tr><td>१४</td><td>राजन कुमार साह सोनार</td><td>शिक्षक</td><td>अ. करार</td></tr>
+                    <tr><td>१५</td><td>सुन्दी कुमारी साह</td><td>का.स.</td><td>न. करार</td></tr>
+                    <tr><td>१६</td><td>राजन कुमार गुप्ता</td><td>शिक्षक</td><td>करार</td></tr>
+                    <tr><td>१७</td><td>अर्जुन कुमार जयस्वाल</td><td>लेखापाल</td><td>करार</td></tr>
+                </table>
+            </div>
+        </div>
     </section>
 
     <!-- ===== STUDENTS ===== -->
-    <section class="students-box">
-        <h2>📊 विद्यार्थी विवरण</h2>
-        <div class="student-grid">
-            <div><h3>ECD</h3><p>केटी: २५, केटा: ३४</p><p><strong>कुल: ५९</strong></p></div>
-            <div><h3>कक्षा १-५</h3><p>केटी: ३२७, केटा: २९२</p><p><strong>कुल: ६१९</strong></p></div>
-            <div><h3>कक्षा ६-८</h3><p>केटी: २४५, केटा: २१७</p><p><strong>कुल: ४६२</strong></p></div>
-            <div><h3>कक्षा ९-१०</h3><p>केटी: १०३, केटा: ८४</p><p><strong>कुल: १८७</strong></p></div>
-            <div class="total"><h3>📚 कुल विद्यार्थी</h3><p><strong>१२६८</strong> (केटी: ६७५, केटा: ५९३)</p></div>
+    <section id="students" class="students-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="tag">📊 विद्यार्थी</span>
+                <h2>विद्यार्थी विवरण</h2>
+            </div>
+            <div class="student-grid">
+                <div class="student-card"><h3>ECD</h3><p>केटी २५ | केटा ३४</p><strong>कुल ५९</strong></div>
+                <div class="student-card"><h3>कक्षा १-५</h3><p>केटी ३२७ | केटा २९२</p><strong>कुल ६१९</strong></div>
+                <div class="student-card"><h3>कक्षा ६-८</h3><p>केटी २४५ | केटा २१७</p><strong>कुल ४६२</strong></div>
+                <div class="student-card"><h3>कक्षा ९-१०</h3><p>केटी १०३ | केटा ८४</p><strong>कुल १८७</strong></div>
+                <div class="student-card total"><h3>📚 कुल</h3><p>केटी ६७५ | केटा ५९३</p><strong>१२६८</strong></div>
+            </div>
         </div>
     </section>
 
     <!-- ===== COMMUNITY ===== -->
-    <section class="community-box">
-        <h2>🏘️ स्थानीय समुदाय</h2>
-        <div class="community-grid">
-            <div><h3>जनसंख्या</h3><p>६,११२ (महिला ३,०८४, पुरुष ३,०२८)</p><p>परिवार: ६९९</p></div>
-            <div><h3>भाषा</h3><p>मातृभाषा: बज्जिका</p><p>भोजपुरी (सहायक)</p></div>
-            <div><h3>साक्षरता</h3><p>कुल: ५६.२९%</p><p>महिला: ४८.२६% | पुरुष: ६४.५८%</p></div>
-            <div><h3>धर्म</h3><p>🕉️ हिन्दू: ८०%</p><p>☪️ मुस्लिम: २०%</p></div>
-            <div><h3>जातिहरू</h3><p>ब्राह्मण, यादव, तेली, कुमी, कोइरी, कानु, हजाम, लोहार, दलित</p></div>
-            <div><h3>आर्थिक अवस्था</h3><p>मुख्य पेशा: कृषि (धान, गहुँ, मकै, तोरी, आलु, उखु)</p></div>
+    <section id="community" class="community-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="tag">🏘️ स्थानीय समुदाय</span>
+                <h2>हाम्रो सेवाक्षेत्र</h2>
+            </div>
+            <div class="community-grid">
+                <div><i class="fas fa-users"></i><h3>जनसंख्या</h3><p>६,११२ (महिला ३,०८४, पुरुष ३,०२८)</p></div>
+                <div><i class="fas fa-language"></i><h3>भाषा</h3><p>बज्जिका, भोजपुरी</p></div>
+                <div><i class="fas fa-percent"></i><h3>साक्षरता</h3><p>कुल ५६.२९% (महिला ४८.२६%, पुरुष ६४.५८%)</p></div>
+                <div><i class="fas fa-pray"></i><h3>धर्म</h3><p>🕉️ हिन्दू ८०% | ☪️ मुस्लिम २०%</p></div>
+                <div><i class="fas fa-users-cog"></i><h3>जातिहरू</h3><p>ब्राह्मण, यादव, तेली, कुमी, कोइरी, कानु, हजाम, लोहार, दलित</p></div>
+                <div><i class="fas fa-farm"></i><h3>आर्थिक</h3><p>मुख्य पेशा: कृषि (धान, गहुँ, मकै, तोरी, आलु, उखु)</p></div>
+            </div>
         </div>
     </section>
 
     <!-- ===== CONTACT ===== -->
-    <section class="contact-box">
-        <h2>📞 सम्पर्क</h2>
-        <p><i class="fas fa-map-marker-alt"></i> रामपुरखाप-९, परोहा, रौतहट</p>
-        <p><i class="fas fa-phone"></i> +977-98XXXXXXXX</p>
-        <p><i class="fas fa-envelope"></i> janatasecondary@gmail.com</p>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="tag">📞 सम्पर्क</span>
+                <h2>हामीलाई सम्पर्क गर्नुहोस्</h2>
+            </div>
+            <div class="contact-grid">
+                <div><i class="fas fa-map-marker-alt"></i><h3>ठेगाना</h3><p>रामपुरखाप-९, परोहा, रौतहट</p></div>
+                <div><i class="fas fa-phone"></i><h3>फोन</h3><p>+977-98XXXXXXXX</p></div>
+                <div><i class="fas fa-envelope"></i><h3>इमेल</h3><p>janatasecondary@gmail.com</p></div>
+            </div>
+        </div>
     </section>
 
     <!-- ===== DEVELOPER ===== -->
-    <section class="developer-box">
-        <h2>🚀 Developed By</h2>
-        <p><strong>Raju Mahato</strong> - Nepal's No.1 Individual Website & App Developer</p>
-        <p><a href="https://rajumahato.it.com" target="_blank">rajumahato.it.com</a></p>
+    <section class="developer-section">
+        <div class="container">
+            <div class="developer-content">
+                <div class="dev-icon"><i class="fas fa-code"></i></div>
+                <div>
+                    <h3>🚀 Developed By</h3>
+                    <h2>Raju Mahato</h2>
+                    <p>Nepal's No.1 Individual Website &amp; App Developer</p>
+                    <a href="https://rajumahato.it.com" target="_blank">rajumahato.it.com</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
         <p>&copy; २०८१ श्री जनता माध्यमिक विद्यालय | सबै अधिकार सुरक्षित</p>
+        <p style="font-size:0.8rem;color:#94a3b8;">10 Lakh+ Premium Website</p>
     </footer>
 
-</div>
+    <script src="script.js"></script>
 </body>
 </html>
